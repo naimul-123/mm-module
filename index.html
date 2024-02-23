@@ -3,12 +3,266 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Font Awesome link -->
+    <script src="https://kit.fontawesome.com/37ea7adc84.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./src/output.css">
     <title>MM Module</title>
 </head>
-<body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+<body class="font-inter">
+    <header class="max-w-screen-2xl mx-auto bg-slate-500">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Item 1</a></li>
+                  <li>
+                    <a>Parent</a>
+                    <ul class="p-2">
+                      <li><a>Submenu 1</a></li>
+                      <li><a>Submenu 2</a></li>
+                    </ul>
+                  </li>
+                  <li><a>Item 3</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-xl">MM module suport</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Item 1</a></li>
+                <li>
+                  <details>
+                    <summary>Parent</summary>
+                    <ul class="p-2">
+                      <li><a>Submenu 1</a></li>
+                      <li><a>Submenu 2</a></li>
+                    </ul>
+                  </details>
+                </li>
+                <li><a>Item 3</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn">Button</a>
+            </div>
+          </div>
+    </header>
+    <main class="max-w-screen-2xl mx-auto  h-full max-h[80%]">
+        <div class="flex gap-4">
+            <div class="w-full bg-slate-200 max-w-60">navigation</div>
+            <div class="bg-slate-200 w-full max-w-screen-xl">
+                <div>
+                    <h2 class="text-purple-950 font-bold text-3xl text-center">Parchase Requisation</h2>
+                    <div class="my-3 p-4 ">
+                        <h3 class="text-purple-950 font-bold text-2xl text-center">General Information</h3>
+                        <div class="grid grid-cols-3 gap-2 justify-center items-center">
+                       
+                            <div>
+                                <label class="form-control w-full max-w-sm">
+                                    <div class="label">
+                                      <span class="label-text">বিগত নোটিং এর পৃষ্ঠা নং:</span>
+                                    </div>
+                                    <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-sm" />
+                                  </label>
+                            </div>
+                       
+                        
+                            <div>
+                                <label class="form-control w-full max-w-sm">
+                                    <div class="label">
+                                      <span class="label-text">বিগত নোটিং এর অনুচ্ছেন নং:</span>
+                                    </div>
+                                    <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-sm" />
+                                  </label>
+                            </div>
+                        
+                        
+                            <div class="">
+                                <label class="form-control w-full max-w-sm">
+                                    <div class="label">
+                                      <span class="label-text">নোটিং শিরোনাম:</span>
+                                    </div>
+                                    <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-sm" />
+                                  </label>
+                            </div>
+                            <div class="">
+                                <label class="form-control w-full max-w-sm">
+                                    <div class="label">
+                                      <span class="label-text">পারসেস রিকুইজিশন নং:</span>
+                                    </div>
+                                    <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-sm" />
+                                  </label>
+                            </div>
+                      
+                            <div>
+                                <label class="form-control w-full max-w-sm">
+                                    <div class="label">
+                                      <span class="label-text">ক্রয়কৃত সম্পদের প্রকার:</span>
+                                    </div>
+                                    <select class="select select-bordered">
+                                      <option disabled selected>নির্বাচন করুন</option>
+                                      <option>Low value Asset</option>
+                                      <option value="">Furniture, Fixture & Fittings - Office</option>
+                                      <option value="">Furniture, Fixture & Fittings - Residence</option>
+                                      <option value="">Mechanical Equipment - Office</option>
+                                      <option value="">Mechanical Equipment - Residence</option>
+                                      <option value="">Electrical Equipment - Office</option>
+                                      <option value="">Electrical Equipment - Residence</option>
+                                      <option value="">Motor Vehicles</option>
+                                      <option value="">Security Equipment</option>
+                                    </select>
+
+                                  </label>
+                            </div>
+                            <div>
+                                <label class="form-control w-full max-w-sm">
+                                    <div class="label">
+                                      <span class="label-text">সম্পত্তি সংক্রান্ত ফাইলের নাম:</span>
+                                    </div>
+                                    <select class="select select-bordered">
+                                      <option disabled selected>নির্বাচন করুন</option>
+                                        <option value="">কাঠের আসবাবপত্র ক্রয়</option>
+                                        <option value="">স্টিলের আসবাবপত্র ক্রয়</option>
+                                        <option value="">মেকানিক্যাল ইক্যুয়িপমেন্ট ক্রয়</option>
+                                        <option value="">কম্পিউটার/ইউপিএস ক্রয়</option>
+                                        <option value="">ইলেক্ট্রিক্যাল ইক্যুয়িপমেন্ট ক্রয়</option>
+                                    </select>
+
+                                  </label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <hr class="bg-yellow-300 w-1">
+                    <div class="my-3 p-4 ">
+                        <h3 class="text-purple-950 font-bold text-2xl text-center">Goods for</h3>
+                        <div class="flex gap-4">
+                            <div class="form-control">
+                                <label class="label cursor-pointer gap-2">
+                                  <span class="label-text">For Employee</span> 
+                                  <input type="radio" name="goodsFor" class="radio checked:bg-gray-500" checked />
+                                </label>
+                            </div>
+                            <div class="form-control">
+                                <label class="label cursor-pointer gap-2">
+                                  <span class="label-text">For Section</span> 
+                                  <input type="radio" name="goodsFor" class="radio checked:bg-gray-500" checked />
+                                </label>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 justify-center items-center">
+                       
+                            <div>
+                                <label class="form-control w-full max-w-sm">
+                                    <div class="label">
+                                      <span class="label-text">এসএপি আইডি:</span>
+                                    </div>
+                                    <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-sm" />
+                                  </label>
+                            </div>
+                            <div class="">
+                                <label class="form-control w-full max-w-sm">
+                                    <div class="label">
+                                      <span class="label-text">শাখা/বিভাগ:</span>
+                                    </div>
+                                    <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-sm" />
+                                  </label>
+                            </div>
+                            <div class="">
+                                <label class="form-control w-full max-w-sm">
+                                    <div class="label">
+                                      <span class="label-text">কস্ট সেন্টার:</span>
+                                    </div>
+                                    <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-sm" />
+                                  </label>
+                            </div>              
+                
+
+                        </div>
+                        <div class="my-3 mx-auto flex justify-end p-4">
+                            <button class="btn btn-primary">Add New</button>
+                        </div>
+                    </div>
+                    <div class="my-3 p-4 ">
+                        <h3 class="text-purple-950 font-bold text-2xl text-center">Goods Entry</h3>
+
+                        <div class="grid grid-cols-3 gap-2 justify-center items-center">
+                       
+                            <div>
+                                <label class="form-control w-full max-w-sm">
+                                    <div class="label">
+                                      <span class="label-text">যার জন্য কেনা হবে:</span>
+                                    </div>
+                                    <select class="select select-bordered">
+                                        <option disabled selected>নির্বাচন করুন</option>
+
+                                      </select>
+                                  </label>
+                            </div>
+                            <div>
+                                <label class="form-control w-full max-w-sm">
+                                    <div class="label">
+                                      <span class="label-text">অনুমোদনকারী:</span>
+                                    </div>
+                                    <select class="select select-bordered">
+                                        <option disabled selected>নির্বাচন করুন</option>
+                                        <option>নির্বাহী পরিচালক</option>
+                                        <option>নির্বাহী পরিচালক(চলতি দায়িত্বে)</option>
+                                        <option>পরিচালক(প্রশাসন)</option>
+                                        
+                                      </select>
+                                  </label>
+                            </div>
+                            <div class="">
+                                <label class="form-control w-full max-w-sm">
+                                    <div class="label">
+                                      <span class="label-text">অনুমোদনের তারিখ:</span>
+                                    </div>
+                                    <input type="date" placeholder="Type here" class="input input-bordered w-full max-w-sm" />
+                                  </label>
+                            </div>
+                            <div class="">
+                                <label class="form-control w-full max-w-sm">
+                                    <div class="label">
+                                      <span class="label-text">ক্রয়কৃত সম্পদের নাম:</span>
+                                    </div>
+                                    <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-sm" />
+                                  </label>
+                            </div>              
+                            <div class="">
+                                <label class="form-control w-full max-w-sm">
+                                    <div class="label">
+                                      <span class="label-text">ক্রয়কৃত সম্পদের একক মূল্য:</span>
+                                    </div>
+                                    <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-sm" />
+                                  </label>
+                            </div>              
+                            <div class="">
+                                <label class="form-control w-full max-w-sm">
+                                    <div class="label">
+                                      <span class="label-text">ক্রয়কৃত সম্পদের পরিমান:</span>
+                                    </div>
+                                    <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-sm" />
+                                  </label>
+                            </div>              
+                
+
+                        </div>
+                        <div class="my-3 mx-auto flex justify-end p-4">
+                            <button class="btn btn-primary">Add New</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
 </body>
 </html>
