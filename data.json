@@ -1,0 +1,78 @@
+[
+{
+    "prNo":154155444,
+    "goodsFor": [
+        {
+            "Name":"Naimul Islam",
+            "Designation": "Assistant Director",
+            "costCenterName":"Barishal offece Common",
+            "costCenterId": 10008888,
+            "items":{
+                "itemName": "Computer Chair",
+                "approvedBy": "Executive Director",
+                "approvedDate": "14/02/2024",
+                "quantity": 2,
+                "unitPrice": 9150
+            }
+        },
+        {
+            "Name":"Naimul Islam",
+            "Designation": "Assistant Director",
+            "costCenterName":"Barishal offece Common",
+            "costCenterId": 10008888,
+            "items":{
+                "itemName": "Computer Chair",
+                "approvedBy": "Executive Director",
+                "approvedDate": "14/02/2024",
+                "quantity": 2,
+                "unitPrice": 9150
+            }
+        }
+    ],
+    "AssetType": "Furniture fixture offece",
+
+    "prAppDate":"20/02/2024",
+    "committeMembers":{
+        "chairman": "Shahidul Islam Par",
+        "jdVu":"MD. Mohaimenul Haque",
+        "3rdMember":{
+            "Name": "Md. Rajib Hossen",
+            "Designation": "Deputy Director(Civil)"
+        },
+        "memberSec": "Naimul Islam"
+    },
+    "qoutationForwardingDate": "15/02/2024",
+    "vendorDetails":[
+        {   "vendorId":10014451,
+            "vendorName": "Nadia Furniture",
+            "vendorAdderss": "Kobi jibonanda das road, barishal",
+            "vendorPrice":145000,
+            "responseDate": "16/02/2024",
+            "qoutationOutwordNo": "135"
+        },
+        {   "vendorId":10014451,
+            "vendorName": "Nadia Furniture",
+            "vendorAdderss": "Kobi jibonanda das road, barishal",
+            "vendorPrice":145000,
+            "responseDate": "16/02/2024",
+            "qoutationOutwordNo": "135"
+        },
+        {   "vendorId":10014451,
+            "vendorName": "Nadia Furniture",
+            "vendorAdderss": "Kobi jibonanda das road, barishal",
+            "vendorPrice":145000,
+            "responseDate": "16/02/2024",
+            "qoutationOutwordNo": "135"
+        }
+    ],
+    "tenderCommittee":{
+        "tenderOpenDate":"21/02/2024",
+        "tenderApprovedDate":"22/02/2024"
+    },
+    "poNo": 4500001541
+    
+
+
+
+}
+]
